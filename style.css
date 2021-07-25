@@ -153,6 +153,18 @@ nav {
     transition: .5s;
 }
 
+.fast-bg {
+    background-color: #F17228;
+}
+
+.install-bg {
+    background-image: url(images/cta-one-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 @media only screen and (max-width:997px) {
     .custom-height {
         height: 100% !important;
