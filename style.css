@@ -199,3 +199,44 @@ footer {
         height: 100% !important;
     }
 }
+
+@media screen and (max-width: 688px) {
+    .ani-img {
+        animation: image 2s linear 1;
+        animation-delay: 1s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    @keyframes image {
+        0% {
+            transform: rotateZ(-180deg) translateX(500px);
+            visibility: visible;
+        }
+        100% {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    }
+    .ani-text {
+        animation: text 1s linear 1;
+        animation-delay: 2s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    .ani-form {
+        animation: text 1s linear 1;
+        animation-delay: 3s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    @keyframes text {
+        0% {
+            transform: translateX(-500px);
+            visibility: visible;
+        }
+        100% {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    }
+}
